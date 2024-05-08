@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es_CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/Estilo1.css">
+    <link rel="icon" href="/imagenes/fondo.jpg">
+    
+    <title>Inicio Sesión</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h3>Usuario-Correo</h3>
+        <input type="text" id="edtemail" placeholder=" ">
+        <h3>Contraseña</h3>
+        <input type="password" id="edtpassword" placeholder=" ">
+        <button type="button" id="show-password">Mostrar contraseña</button>
+        <button id="loginbtn" class="button-login">Iniciar Sesión</button>
+        <button id="signbtn" class="button-singup">Registrarse</button>
+        
+        <div class="social-buttons">
+            <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-login_uri="https://your.domain/your_login_endpoint" data-your_own_param_1_to_login="any_value" data-your_own_param_2_to_login="any_value">
+                <button id="googlebtn" class="button-google">Iniciar Sesión con Google</button>
+            </div>
+            <div>
+                <button type="button" id="facebooklogin" class="btn btn-primary">Iniciar Sesión con Facebook</button>
+            </div>
+        </div>
+        <a href="/templates/EliminarUsuario.html" class="text-muted custom-link">Borrar usuario</a>
+        <a href="/templates/RecuperarContraseña.html" class="text-muted custom-link">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <script type="module" src="/controllers/autenticación.js"></script>
+    <script type="module" src="/controllers/AuthGoogle.js"></script>
+    <script type="module" src="/controllers/InicioFacebook.js"></script>
+    <script type="module" src="/controllers/index.js"></script>
+    <script type="module" src="/controllers/BorrarUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es_CO">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/Estilo2.css">
+    <link rel="icon" href="/imagenes/fondo.jpg">
+
+    
+    <title>REGISTRARSE</title>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h2>Registro de Usuario</h2>
+
+        <h3>Usuario</h3>
+        <input type="text" id="email" placeholder="Email"> 
+
+        <h3>Confirmar Usuario</h3>
+        <input type="text" id="email2" placeholder="Confirmar Email"> 
+
+        <h3>Contraseña</h3>
+        <input type="password" id="password" placeholder="Contraseña"> 
+        
+        <h3>Confirmar Contraseña</h3>
+        <input type="password" id="password2" placeholder="Confirmar Contraseña"> 
+
+        <div></div>
+        <button type="button" id="show-password">Mostrar contraseña</button>
+        <button id="rgsbtn" class="button-singup" type="submit">Registrarse</button> 
+        <button id="exitbtn" class="button-exit" type="submit">Iniciar Sesión</button> 
+        
+
+    </div>
+
+    <script type="module" src="/controllers/registro.js"></script>
+    <script type="module" src="/controllers/verificación.js"></script>
+
+</body>
+
+
+</html>
